@@ -1,0 +1,53 @@
+{
+  "name": "dsh-conversation-width",
+  "version": "1.0.0",
+  "description": "Conversation display-area width control for DSH — adds a General Settings row that sets the transcript column width, sharing one preference with the built-in drag handles.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    },
+    "manifestVersion": 1
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/dsh-client-locale": "^0.2.0-rc.2",
+    "@deepseek-ai/dsh-client-ui-slots": "^0.2.0-rc.2",
+    "react": "^18.2.0"
+  },
+  "license": "MIT",
+  "author": "Dreamhousemx",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Dreamhousemx/dsh-conversation-width.git"
+  },
+  "homepage": "https://github.com/Dreamhousemx/dsh-conversation-width#readme",
+  "bugs": {
+    "url": "https://github.com/Dreamhousemx/dsh-conversation-width/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "ui",
+    "settings",
+    "conversation-width"
+  ]
+}

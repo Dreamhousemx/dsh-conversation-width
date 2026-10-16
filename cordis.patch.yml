@@ -1,0 +1,9 @@
+# Register the Conversation Width control as a profile-level plugin row.
+#
+# The plugin contributes exactly one thing: a General Settings row that owns
+# the transcript column width preference. It adds no HTTP route, no profile
+# default model, and no workspace mount, so installing the bundle is purely
+# additive and reversible — removing the row below removes every trace.
+- insert:
+    - id: dsh-conversation-width
+      name: dsh-conversation-width
